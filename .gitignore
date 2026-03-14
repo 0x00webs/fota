@@ -49,3 +49,6 @@ Thumbs.db
 .nitro
 .cache
 .nx/polygraph
+
+# vercel
+.vercel

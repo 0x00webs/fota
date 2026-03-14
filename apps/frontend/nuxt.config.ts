@@ -10,6 +10,13 @@ const config: NuxtConfig = defineNuxtConfig({
     host: 'localhost',
     port: 4200,
   },
+  nitro: {
+    preset: 'vercel',
+    output: {
+      // Moves the .vercel folder from apps/frontend/ to the root
+      dir: '../../.vercel/output'
+    },
+  },
   typescript: {
     typeCheck: true,
     tsConfig: {

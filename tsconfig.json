@@ -7,10 +7,10 @@
       "path": "./apps/frontend"
     },
     {
-      "path": "./apps/api-e2e"
+      "path": "./apps/backend"
     },
     {
-      "path": "./apps/api"
+      "path": "./libs/shared-types"
     }
   ]
 }

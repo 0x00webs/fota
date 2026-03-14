@@ -4,9 +4,13 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Debug @fota/api with Nx",
+      "name": "Debug @fota/backend with Nx",
       "runtimeExecutable": "bun",
-      "runtimeArgs": ["nx", "serve", "@fota/api"],
+      "runtimeArgs": [
+        "nx",
+        "serve",
+        "@fota/backend"
+      ],
       "env": {
         "NODE_OPTIONS": "--inspect=9229"
       },
@@ -15,7 +19,7 @@
       "skipFiles": ["<node_internals>/**"],
       "sourceMaps": true,
       "outFiles": [
-        "${workspaceFolder}/apps/api/dist/**/*.(m|c|)js",
+        "${workspaceFolder}/apps/backend/dist/**/*.(m|c|)js",
         "!**/node_modules/**"
       ]
     }

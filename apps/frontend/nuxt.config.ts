@@ -1,8 +1,9 @@
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import type { NuxtConfig } from 'nuxt/config';
 import { defineNuxtConfig } from 'nuxt/config';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
+const config: NuxtConfig = defineNuxtConfig({
   workspaceDir: '../../',
   devtools: { enabled: true },
   devServer: {
@@ -23,3 +24,4 @@ export default defineNuxtConfig({
     plugins: [nxViteTsPaths()],
   },
 });
+export default config;
